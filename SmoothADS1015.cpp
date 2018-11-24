@@ -12,7 +12,7 @@ SmoothADS1015::SmoothADS1015(int SDA, int SCL)
 {
   ads = new Adafruit_ADS1015();
   ads->setGain(GAIN_ONE);        // 1x gain   +/- 4.096V  1 bit = 2mV      0.125mV
-  ads->begin();
+  // ads->begin();
   Wire.begin(SDA,SCL);
   delay(10);
 }
