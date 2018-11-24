@@ -1,5 +1,6 @@
 #include "Arduino.h"
 #include <Adafruit_ADS1015.h>
+#include <Wire.h>
 
 class SmoothADS1015
 {
