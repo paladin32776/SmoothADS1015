@@ -11,6 +11,7 @@ class SmoothADS1015
     Adafruit_ADS1015 *ads;
   public:
     SmoothADS1015();
+    SmoothADS1015(int SDA, int SCL);
     ~SmoothADS1015();
     void setup(unsigned int _pin, unsigned int _Npos);
     int read(unsigned int _pin);
